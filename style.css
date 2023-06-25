@@ -1,0 +1,109 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 50%;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.form .input_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .input_text input[type="text"] {
+    width: 80%;
+    padding: 5px 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+}
+
+.form .input_text .btn {
+    width: 30%;
+    background-color: #f50;
+    color: #fff;
+    padding: 5px 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form .input_text .btn:hover {
+    background-color: #f10;
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 15px;
+}
+
+.boxs .box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.box .item {
+    background-color: blueviolet;
+    padding: 5px 8px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 15px 0 0;
+}
+
+.danger {
+    color: red;
+}
+
+.succes {
+    color: green;
+}
+
+
